@@ -1,0 +1,10 @@
+1 :Add a new role "editor" =>done
+2: create a page where editor can submit a post. For now you can store post id, slug, title and description.
+3: make sure only editor can see that page and submit post . 
+4: create a listing page here any Logged in user can see posts.
+
+
+create posts, add comments, lists posts
+
+:  only editor and admin can see and access the "create post" functonality
+: all other users can see the posts and comments (edited)

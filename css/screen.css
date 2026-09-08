@@ -1,0 +1,335 @@
+
+        /* ============================================================
+           DELETE MODAL OVERLAY
+           ============================================================ */
+
+        .modal-overlay {
+
+            display: none;
+
+            position: fixed;
+
+            z-index: 1000;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba(0, 0, 0, 0.5);
+
+        }
+
+
+        /* ============================================================
+           MODAL BOX
+           ============================================================ */
+
+        .modal-content {
+
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            background-color: #fff;
+
+            padding: 25px;
+
+            border-radius: 5px;
+
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+
+            text-align: center;
+
+            width: 300px;
+
+        }
+
+
+        /* ============================================================
+           MODAL BUTTONS
+           ============================================================ */
+
+        .modal-buttons button {
+
+            margin: 10px;
+
+            padding: 8px 20px;
+
+            cursor: pointer;
+
+            border: none;
+
+            color: white;
+
+        }
+
+
+        /* YES BUTTON */
+
+        #confirmYes {
+
+            background-color: #d9534f;
+
+        }
+
+
+        /* NO BUTTON */
+
+        #confirmNo {
+
+            background-color: #f0ad4e;
+
+        }
+
+
+        /* ============================================================
+           SUCCESS MESSAGE
+           ============================================================ */
+
+        .success-message {
+
+            display: none;
+
+            position: fixed;
+
+            top: 20px;
+
+            right: 20px;
+
+            z-index: 2000;
+
+            padding: 15px 25px;
+
+            background-color: #5cb85c;
+
+            color: white;
+
+            border-radius: 4px;
+
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+
+        }
+ul {
+    padding: 0;
+    margin: 0 0 20px 0;
+    list-style: none;
+}
+h1, h2 {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+p {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+a:link, a:visited {
+    text-decoration: underline;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: darkolivegreen;
+}
+ul li {
+    padding: 5px 0;
+}
+ul li input[type="text"],
+ul li input[type="password"] {
+    width: 200px;
+}
+textarea{
+    width: 400px;
+    height: 150px;
+}
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; }
+.logo {
+    color: darkgray;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 200px;
+    float: left;
+}
+body {
+    background-color: darkgrey;
+    font-family: Arial, sans-serif;
+    font-size: 0.8em;
+}
+#container, footer {
+    background:  #F8F9FA;
+    width: 920px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    width: 920px;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+}
+#container {
+    min-height: 500px;
+    border-radius: 5px 5px 0 0;
+}
+footer {
+    border-radius: 0 0 5px 5px;
+    border-top: 1px dashed blanchedalmond;
+    color: balck;
+}
+.widget { margin-bottom: 20px; }
+.widget h2 {
+    margin: 0 0 10px 0;
+    padding: 0 5px;
+    font-weight: normal;
+    border-bottom: 1px solid darkolivegreen;
+}
+.widget .inner { margin: 0 10px; }
+nav { float: left; }
+nav ul { margin: 0; }
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a { text-decoration: none; }
+nav ul li.current { font-weight: bold; }
+aside {
+    width: 260px;
+    float: right;
+    border-left: 1px dashed darkolivegreen;
+    padding-left: 15px;
+}
+.profile {
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    padding: 5px;
+}
+
+.profile img {
+    width: 100px;         
+    max-width: 100%;      
+    height: auto;         
+    display: block;       
+    margin: 0 auto 10px;  
+}
+.user-avatar-left {
+    width: 130px;        
+    height: 130px;       
+    object-fit: cover;   
+    border-radius: 8px;  
+    margin-top: 15px;    
+    display: block;      
+}
+.post_data { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 2.5px; font-weight: bold; }
+        input[type="text"], textarea { width: 60%; padding: 5px; box-sizing: border-left; }
+        button { background-color: darkgrey; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        button:hover { background-color: darkseagreen; }
+/* Layout Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Individual Post Card */
+article {
+    display: flex;
+    gap: 24px; /* Space between image and text content */
+    margin-bottom: 30px; /* Space between different posts */
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+    padding: 16px;
+    align-items: flex-start; /* Aligns items to the top */
+}
+
+/* Note: Since your <h2> tag is directly inside <article> and before the flex columns, 
+   we force it to take up the full width above the columns, or you can remove/move it. */
+article h2 {
+    display: none; /* Hidden because 'CSS' seems like a placeholder headline. Remove this line if you need it. */
+}
+
+/* Left Side - Image Container */
+.posts-left {
+    flex: 0 0 200px; /* Fixed width for the portrait image column */
+    width: 200px;
+}
+
+/* Exact Portrait Image Styling */
+.posts-left img {
+    width: 100%;
+    height: 280px; /* 5:7 Portrait Aspect Ratio (200px width by 280px height) */
+    object-fit: cover; /* Prevents stretching or squeezing of your various images */
+    border-radius: 6px;
+    display: block;
+}
+
+/* Right Side - Text Content Container */
+.posts-right {
+    flex: 1; /* Takes up the remaining available width */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Consistent spacing between title, meta, and description */
+}
+
+/* Post Title Link */
+.posts-right p:first-child a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.posts-right p:first-child a:hover {
+    color: #0066cc; /* Color change on hover */
+}
+
+/* Post Meta (Date and Author) */
+.posts-right .post-meta {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 0;
+}
+
+/* Post Description Text */
+.posts-right p:last-child {
+    font-size: 1rem;
+    color: #444444;
+    line-height: 1.6;
+    margin: 4px 0 0 0;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    article {
+        flex-direction: column; /* Stacks image on top of text on small screens */
+        gap: 16px;
+    }
+    
+    .posts-left {
+        flex: none;
+        width: 100%;
+    }
+    
+    .posts-left img {
+        height: 350px; /* Adjust portrait height for mobile view if needed */
+    }
+}
+
+
+.full-post-container { max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: sans-serif; }
+        .full-post-meta { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+        .full-post-image { width: 100%; max-height: 450px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; }
+        .full-post-content { line-height: 1.8; font-size: 1.1rem; color: #333; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #0066cc; text-decoration: none; }
+#login li.link { margin-top: 5px; }
+.clear { clear: both; }
