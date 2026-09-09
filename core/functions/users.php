@@ -8,6 +8,7 @@
 function change_profile_image($user_id, $file_temp, $file_extn){
 
      //converting user id to integer.
+    //implement user ntification here
 
      $user_id = (int)$user_id;
 
