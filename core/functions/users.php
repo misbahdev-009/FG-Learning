@@ -24,7 +24,7 @@ function change_profile_image($user_id, $file_temp, $file_extn){
     $old_file = $row['profile'];
 
 
-    // 2. Generate NEW file path
+    // 2. Generate NEW file path randomly
     $file_path = 'images/profile/' . substr(md5(time()), 0, 10) . '.' . $file_extn;
 
 
@@ -55,7 +55,7 @@ function change_profile_image($user_id, $file_temp, $file_extn){
         } else {
 
             // If database update failed,
-            // delete the newly uploaded image
+            // then delete the newly uploaded image
             if (file_exists($file_path)) {
                 unlink($file_path);
             }
@@ -443,6 +443,10 @@ function updatePostData($post_id, $fileData, $title, $content, $date){
         $query = mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE(`username` = '$identity' OR `email` = '$identity')  AND `password` = '$password' LIMIT 1");
 
         return(mysql_result($query, 0 ) == 1) ? $user_id : false;
+        }
+        function destroyUser($usrId){
+
+            //delete user code goes
         }
 
         function userActivationViaWhatsapp($userId){
