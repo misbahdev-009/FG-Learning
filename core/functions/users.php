@@ -5,11 +5,11 @@
 //                move_uploaded_file($file_temp, $file_path);
 //                mysql_query("UPDATE `users` SET `profile` = '" . $file_path . "' WHERE `user_id` = " . (int)$user_id);
 //        }
-function change_profile_image($user_id, $file_temp, $file_extn){
+function change_profiles_image($user_id, $file_temp, $file_extn){
 
-     //converting user id to integer.
+     //converting user id to integer.g
 
-     $userID = (int)$user_id;
+     $user_id = (int)$user_id;
 
     // 1. Get the OLD profile image from database
     $query = mysql_query("
@@ -445,8 +445,8 @@ function updatePostData($post_id, $fileData, $title, $content, $date){
         return(mysql_result($query, 0 ) == 1) ? $user_id : false;
         }
 
-        function userActivationViaWhatsapp($userId){
-            //code goes here
+        function userActivationViaWhatsapps($userId){
+            //code goes here jo
         }
 
 ?>
