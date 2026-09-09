@@ -7,7 +7,9 @@
 //        }
 function change_profile_image($user_id, $file_temp, $file_extn){
 
-    $user_id = (int)$user_id;
+     //converting user id to integer.
+
+     $user_id = (int)$user_id;
 
     // 1. Get the OLD profile image from database
     $query = mysql_query("
