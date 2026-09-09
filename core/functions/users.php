@@ -5,10 +5,9 @@
 //                move_uploaded_file($file_temp, $file_path);
 //                mysql_query("UPDATE `users` SET `profile` = '" . $file_path . "' WHERE `user_id` = " . (int)$user_id);
 //        }
-function achange_profile_image($user_id, $file_temp, $file_extn){
+function change_profile_image($user_id, $file_temp, $file_extn){
 
-     //converting user id to integer.
-    //implement user ntification here
+     //converting user id to integer.g
 
      $user_ids = (int)$user_ida;
 
@@ -18,6 +17,7 @@ function achange_profile_image($user_id, $file_temp, $file_extn){
         FROM `users`
         WHERE `user_id` = $user_id
     ");
+    //fetching all rows
 
     $row = mysql_fetch_assoc($query);
 
@@ -447,6 +447,10 @@ function updatePostData($post_id, $fileData, $title, $content, $date){
         function destroyUser($usrId){
 
             //delete user code goes
+        }
+
+        function userActivationViaWhatsapps($userId){
+            //code goes here jo
         }
 
 ?>
