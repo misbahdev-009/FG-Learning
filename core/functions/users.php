@@ -8,9 +8,8 @@
 function change_profile_image($user_id, $file_temp, $file_extn){
 
      //converting user id to integer.
-    //implement user ntification here
 
-     $user_id = (int)$user_id;
+     $userID = (int)$user_id;
 
     // 1. Get the OLD profile image from database
     $query = mysql_query("
@@ -18,6 +17,7 @@ function change_profile_image($user_id, $file_temp, $file_extn){
         FROM `users`
         WHERE `user_id` = $user_id
     ");
+    //fetching all rows
 
     $row = mysql_fetch_assoc($query);
 
@@ -443,6 +443,10 @@ function updatePostData($post_id, $fileData, $title, $content, $date){
         $query = mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE(`username` = '$identity' OR `email` = '$identity')  AND `password` = '$password' LIMIT 1");
 
         return(mysql_result($query, 0 ) == 1) ? $user_id : false;
+        }
+
+        function userActivationViaWhatsapp($userId){
+            //code goes here
         }
 
 ?>
