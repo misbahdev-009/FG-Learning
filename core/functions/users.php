@@ -5,12 +5,12 @@
 //                move_uploaded_file($file_temp, $file_path);
 //                mysql_query("UPDATE `users` SET `profile` = '" . $file_path . "' WHERE `user_id` = " . (int)$user_id);
 //        }
-function change_profile_image($user_id, $file_temp, $file_extn){
+function achange_profile_image($user_id, $file_temp, $file_extn){
 
      //converting user id to integer.
     //implement user ntification here
 
-     $user_id = (int)$user_id;
+     $user_ids = (int)$user_ida;
 
     // 1. Get the OLD profile image from database
     $query = mysql_query("
