@@ -1,5 +1,6 @@
 <?php 
 include 'core/init.php';
+protect_page();
 include 'includes/overall/header.php';
 
     if(isset($_GET['username']) === true && empty($_GET['username']) === false){

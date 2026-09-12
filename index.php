@@ -10,6 +10,7 @@
 <?php
     if(has_access($session_user_id, 'admin') === true){
         echo 'Admin!';
+        header('location: admin.php');
     }else if(has_access($session_user_id, 'moderator') === true){
         echo 'Moderator';
     }else if(has_access($session_user_id, 'editor') === true){
