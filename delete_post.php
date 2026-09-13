@@ -2,7 +2,7 @@
 include 'core/init.php';
 protect_page();
 
-if (isset($_GET['slug']) && !empty($_GET['slug'])) {
+if (isset($_GET['slug']) == true && !empty($_GET['slug']) == fasle) {
     $slug    = $_GET['slug'];
     $post_id = get_post_id_by_slug($slug);
     
